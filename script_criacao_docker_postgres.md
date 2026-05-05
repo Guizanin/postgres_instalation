@@ -2,6 +2,7 @@
 
 ## 🔁 Altere as linhas com os valores que desejar
 | -e POSTGRES_PASSWORD=senhaSegura
+
 | -e POSTGRES_USER=usuario
 
 ```bash
