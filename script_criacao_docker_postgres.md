@@ -4,7 +4,7 @@
 | -e POSTGRES_PASSWORD=senhaSegura
 | -e POSTGRES_USER=usuario
 
-⌨️ ```bash
+```bash
 mkdir -p ~/docker/postgres_data
 docker run -d \
   --name meu_postgres \
@@ -26,7 +26,7 @@ source ~/.bashrc
 ⚠️ Os comandos _echo_ acima são para atualizar seu bashrc(caso utilize o bash como terminal) com alias para ficar mais fácil controlar o container(start, stop, psql)
 
 ## 📣 Adicionar usuário a lista docker
-⌨️ ```bash
+```bash
 getent group docker || sudo groupadd docker && sudo usermod -aG docker $USER
 newgrp docker
 docker ps
