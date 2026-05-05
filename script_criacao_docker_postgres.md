@@ -1,12 +1,5 @@
 # 🤓 Comando para criar uma pasta no usuário para guardar os containers criados
 
-## 🔁 Altere as linhas com os valores que desejar
-| -e POSTGRES_PASSWORD=senhaSegura
-
-| -e POSTGRES_USER=usuario
-
-__ 
-
 ## ⌨️ Criando docker
 Vamos criar uma pasta para guardar os containers criados, em seguida cria o docker.
 
@@ -27,6 +20,10 @@ echo "alias pgcli=\"docker exec -it meu_postgres psql -U usuario -d meubanco\"" 
 
 source ~/.bashrc
 ```
+#### ⚠️ Altere em POSTGRES_PASSWORD= _senhaSegura_ com o valor que desejar
+
+#### ⚠️ Altere em POSTGRES_USER= _usuario_ com o valor que desejar 
+
 #### ⚠️ Se estiver utilizando o docker em máquina pessoal e seu usuário NÃO estiver adicionado ao grupo docker, você precisará utilizar _sudo_ no início do comando docker
 
 #### ⚠️ Caso queira adicionar seu usuário ao grupo docker, segue abaixo comandos para fazer isso.
