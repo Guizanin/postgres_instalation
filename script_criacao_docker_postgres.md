@@ -5,6 +5,9 @@
 
 | -e POSTGRES_USER=usuario
 
+## ⌨️ Criando docker
+Vamos criar uma pasta para guardar os containers criados, em seguida cria o docker.
+
 ```bash
 mkdir -p ~/docker/postgres_data
 docker run -d \
@@ -23,7 +26,9 @@ echo "alias pgcli=\"docker exec -it meu_postgres psql -U usuario -d meubanco\"" 
 source ~/.bashrc
 ```
 ⚠️ Se estiver utilizando o docker em máquina pessoal e seu usuário NÃO estiver adicionado ao grupo docker, você precisará utilizar _sudo_ no início do comando docker
+
 ⚠️ Caso queira adicionar seu usuário ao grupo docker, segue abaixo comandos para fazer isso.
+
 ⚠️ Os comandos _echo_ acima são para atualizar seu bashrc(caso utilize o bash como terminal) com alias para ficar mais fácil controlar o container(start, stop, psql)
 
 ## 📣 Adicionar usuário a lista docker
